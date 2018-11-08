@@ -185,7 +185,7 @@ nav {
 }
 @keyframes gitFade{
     0%{color:rgba(255, 255, 255, 0.678);}
-    50%{color:linear-gradient(rgb(79, 88, 168), rgb(98, 111, 226))}
+    50%{color:linear-gradient(rgb(69, 79, 165), rgb(98, 111, 226))}
     100%{color:rgba(68, 78, 161, 0.8)}
 }
 
