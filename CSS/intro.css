@@ -1,0 +1,165 @@
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#background:after {
+    content: "";
+    background-image: url(../Images/laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:block;
+    height: 100vh; 
+    width:100%;
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+}
+#background:after:hover {
+    -webkit-filter: blur(0px);
+}
+#container{
+    position: absolute; 
+    padding: 100px 100px 50px 100px;
+    width:300px;
+    margin:10vh;
+    /*centering */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto; 
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
+#name {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 10px;
+    padding-bottom: 0   ;
+}
+.heading{
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 0;
+    color:#3498db;
+}
+p {
+    letter-spacing: 3px;
+    font-size: 0.9em;
+    line-height: 21px;
+    font-weight: 100;  
+}
+.div-line {
+    border: none;
+    height: 1px;
+    color: white;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1 0px;
+}
+#profile-img{
+    width: 250px;
+    height: auto;
+    border-radius:170px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
+}
+.col {
+    width:400px;
+    max-height: 250px;
+}
+.content-box {
+    color:black;
+    background-color: white;
+    padding:20px;
+    margin:20px;
+}
+.rating {
+    text-align: left;
+    letter-spacing: 3px;
+    font-size:0.5em;
+    width: 25%;
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+li { float: left; padding:6px;}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color:white;
+}
+.nav-link {
+    color: rgba(148, 148, 148, 0.685);
+    text-decoration: none;
+}
+.footer-link{
+    z-index: 1;
+    font-size: 2em;
+
+}
+footer{
+    position: absolute; 
+    z-index: 1;
+    width: 500px;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+ul{
+
+    right: 0;
+    left: 0;
+    margin:auto 0;
+    
+    
+}
+a:hover{color: rgb(255, 255, 255);}
+
+nav {
+    position: absolute; 
+    z-index: 1;
+    width: 500px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    letter-spacing: 10px;
+}
+.link-icon{ 
+    margin-right: 12px;
+}
+.fab{
+    font-size: 1.7em;
+    color:rgba(255, 255, 255, 0.678);
+}
+
+/*SS links color hover*/
+#facebook:hover{
+    color:rgba(0, 81, 255, 0.8);
+}
+#youtube:hover{
+    color:#cc181e;
+}
+#linkedin:hover{
+    color:rgba(0, 119, 181, 0.8);;
+}
+#github:hover{
+    color:rgba(68, 78, 161, 0.8);
+}
+@import url("animate.css");
+
+footer > ul{ margin-left:150px;width: 300px;}
+footer{margin: auto;
+    right: 0;
+    left: 0;
+top:90vh;
+}
