@@ -183,7 +183,7 @@ nav {
 }
 @keyframes linkFade{
     0%{color:rgba(255, 255, 255, 0.678);}
-    50%{color:linear-gradient(rgb(1, 147, 226), rgb(89, 180, 230))}
+    50%{color:linear-gradient(rgb(0, 137, 211), rgb(78, 155, 197))}
     100%{color:rgba(0, 119, 181, 0.8)}
 }
 @keyframes gitFade{
