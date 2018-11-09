@@ -20,6 +20,9 @@ body {
 #background:after:hover {
     -webkit-filter: blur(0px);
 }
+::selection { /*Changing Selection color */
+    background: rgba(0, 0, 0, 0.7); /* WebKit/Blink Browsers */
+  }
 #container{
     position: absolute; 
     padding: 100px 100px 50px 100px;
