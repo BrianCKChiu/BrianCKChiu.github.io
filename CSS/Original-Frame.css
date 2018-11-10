@@ -99,12 +99,13 @@ ul {
     padding:0;
 }
 .nav-links{}
-.nav-links, .link-icon { float: left; padding:6px 0; }
+.link-icon { float: left;}
+.nav-links{  padding:6px 0; }
 .nav-link{
     width: 100%;
     float: left;
     width: auto;
-    text-align: justify;
+ 
     width: 125px;;
     text-decoration: none;
     font-size: 20px;
@@ -222,6 +223,16 @@ footer > ul{width: 100%;}
         }
         .container{ margin-top:13vh;}
     }
+    @media only screen and (max-width: 550px) {
+        .nav-links {
+            margin-right: 20px;
+        }
+        .nav-link {
+            width: 25%;
+        }
+        .container{ margin-top:13vh;}
+    }
+
 
 
 
