@@ -25,7 +25,7 @@ body {
 ::selection { /*Changing Selection color */
     background: rgba(0, 0, 0, 0.7); /* WebKit/Blink Browsers */
   }
-#container{
+#home{
     position: absolute; 
     padding: 100px 100px 50px 100px;
     width:300px;
@@ -102,20 +102,27 @@ ul {
     padding:0;
 }
 li { float: left; padding:6px;}
-a{
+a, button{
     text-decoration: none;
     font-size: 20px;
     font-weight: 900;
     color:white;
 }
-
+button {
+    padding: 0;
+    border: none;
+    background: none;
+     font-family: 'Oswald', sans-serif;
+     letter-spacing: 10px;
+     outline:none;
+    }
 .footer-link{
     z-index: 1;
     font-size: 2em;
 
 }
 
-a:hover{color: rgb(255, 255, 255);}
+a:hover, button:hover{color: rgb(255, 255, 255);}
 nav {
     position: absolute; 
     z-index: 1;
@@ -172,30 +179,7 @@ footer > ul{ margin-left:150px;width: 300px;}
     animation-duration: 1s;
     color:rgba(68, 78, 161, 0.8);
 }
-/*SS-media button menu*/
-#popUpSS {
-    
-    margin:0;
-    padding:0;
-    width: 300px; height: 200px;
-}
-.vertSS{display:block;  float: none; display: none;;
 
-}
-#popup{margin:5px;}
-#popup-btn{
-    background-color: rgba(255, 255, 255, 0.8);
-    border:none;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    margin: 0;
-    padding: 0;
-}
-#popup-btn:hover .vertSS{
-    display: block;
-
-}
 
 
 @keyframes fbFade{
