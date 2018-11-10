@@ -98,7 +98,7 @@ ul {
     margin:0;
     padding:0;
 }
-
+.nav-links{}
 .nav-links, .link-icon { float: left; padding:6px 0; }
 .nav-link{
     width: 100%;
@@ -122,6 +122,7 @@ button {
 .footer-link{
     z-index: 1;
     font-size: 2em;
+    width: 100%;
 
 }
 
@@ -141,7 +142,7 @@ nav {
 footer{
     position: absolute; 
     z-index: 1;
-    width: 500px;
+    width: 300px;
     margin: auto;
     right: 0;
     left: 0;
@@ -152,14 +153,15 @@ footer{
     text-decoration: none;
 }
 .link-icon{ 
-    margin-right: 12px;
+    text-align: center;
+    width:25%;
     font-size: 20px;
 }
 .fab{
     font-size: 1.7em;
     color:rgba(255, 255, 255, 0.678);
 }
-footer > ul{ margin-left:150px;width: 300px;}
+footer > ul{width: 100%;}
 /*SS links color hover*/
 #facebook:hover{
     
