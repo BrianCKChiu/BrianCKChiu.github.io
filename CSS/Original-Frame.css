@@ -109,7 +109,7 @@ ul {
     text-decoration: none;
     font-size: 20px;
     font-weight: 900;
-    color:white;
+    color:rgba(255, 255, 255, 0.39);
 }
 button {
     padding: 0;
@@ -148,10 +148,7 @@ footer{
     left: 0;
     bottom:10px;
 }
-.nav-link { /*footer nav*/
-    color: rgba(148, 148, 148, 0.685);
-    text-decoration: none;
-}
+
 .link-icon{ 
     text-align: center;
     width:25%;
@@ -159,7 +156,7 @@ footer{
 }
 .fab{
     font-size: 1.7em;
-    color:rgba(255, 255, 255, 0.678);
+    color:rgba(255, 255, 255, 0.295);
 }
 footer > ul{width: 100%;}
 /*SS links color hover*/
