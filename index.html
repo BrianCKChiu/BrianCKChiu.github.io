@@ -3,9 +3,10 @@
 
 <head>
     <title>Profile</title>
+    
     <link rel="stylesheet" href="CSS/Original-Frame.css">
-    <link rel="stylesheet" href="CSS/tab-display.css">
     <link rel="stylesheet" href="CSS/aboutMe.css">
+    
     <!--Counter for about me-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
@@ -21,17 +22,17 @@
 <body>
     <div id="background">
         <nav id="top-nav">
-            <div id="links">
-
-                <a  onclick="" class="nav-link">Home </a>
+            <div class="nav-links">
+                <button onclick="pagechange('home')" class="nav-link">Home</button>
+                <button onclick="pagechange('about')" class="nav-link">About</button>
+                <button onclick="" class="nav-link">Skills</button>
+                <button onclick="" class="nav-link">Projects</button>
                 <!--Introduction-->
-                <a href="" onclick="" class="nav-link">About Me</a>
-                <a href="" onclick="" class="nav-link">Skills</a>
-                <a href="" onclick="" class="nav-link">Projects</a>
+                
 
             </div>
         </nav>
-        <div id="home" class="ceontent dis">
+        <div id="home" class="container">
             <!--Introduction-->
             <div id="intro">
                 <img src="Images/Profile-Picture.jpeg" alt="" id="profile-img">
@@ -43,23 +44,83 @@
 
             <!--<a href="" class="down" id="page2"><i class="fas fa-caret-down"></i></a> -->
         </div>
-        <!--Skills-->
-        <div id="skills" style="display:none">
-            <h3 class="heading text" id="title">Skills</h3>
-            <hr class="div-line">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque imperdiet, sem vel egestas tincidunt, enim tellus vehicula
-                massa. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque imperdiet, sem vel egestas tincidunt, enim tellus vehicula
-                massa. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque imperdiet, sem vel egestas tincidunt, enim tellus vehicula
-                massa. </p>
+
+        <!--ABOUT ME-->
+        <div class="container" id="about">
+            <!--First Colum-->
+            <div class="left-col col">
+                <div id="personalInfo">
+                    <img src="Images/image0.png" alt="" id="profile-img">
+                    <h1 class="name">Brian Chiu</h1>
+                </div>
+                <hr>
+                <div id="contactInfo">
+                    <span class="heading"> Email</span>
+
+                    <div id="email-links">
+                        <ul>
+                            <li><span class="bold"> Personal </span>- <span class="email">brianchiu33@gmail.com</span>
+                            </li>
+                            <li><span class="bold"> Work/School </span>- <span class="email">chiubri@sheridancollege.ca</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <span class="heading"> Websites</span>
+                    <div id="web-links">
+                        <ul>
+                            <li><span class="bold"> Linkedin </span> - <a href="www.linkedin.com/in/brian-ck-chiu/">linkedin.com/in/brian-ck-chiu/</a></li>
+                            <li><span class="bold"> Github </span> - <a href="www.github.com/BrianCKChiu">github.com/BrianCKChiu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-col col">
+                <!--Second Colum-->
+                <div id="description">
+                    <h4 class="heading text">BIO</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit risus lacus, nec commodo odio
+                    iaculis
+                    ut. Nulla facilisi. Phasellus at urna faucibus, tristique leo id, pharetra orci. Fusce nec posuere
+                    urna. In
+                    gravida ex sed eros tristique aliquet. Aenean dignissim sit amet lorem et semper. Sed leo ipsum,
+                    congue.
+                    <p></p>
+                </div>
+
+
+
+
+                <div id="education">
+
+
+                    <!--Add counting numbers for gpa and expected to graduate-->
+                </div>
+                <div id="school-bar">
+                    <div class="col-school" id="school">
+                        <h2 id="program-name">CST - System Analyst</h2><span id="college">@ Sheridan College </span>
+                    </div>
+                    <div class="col-school">
+                        <i class="fas fa-graduation-cap edu-ico"></i>
+                        <div class="num">3.83</div>
+                        Current GPA
+                    </div>
+                    <div class="col-school">
+                        <i class="fas fa-calendar-alt edu-ico"></i>
+                        <div class="num">2020</div>
+                        Graduate in
+                    </div>
+
+                </div>
+                <script type="text/javascript">
+                    
+                </script>
+            </div>
         </div>
+
         <footer>
             <ul id="footerLinks">
-                <li class="link-icon horizontalSS"><a class="ss-links" href="https://www.facebook.com/brian.c.k.chiu">
+                <li class="link-icon nav-links"><a class="ss-links" href="https://www.facebook.com/brian.c.k.chiu">
                         <i class="fab fa-facebook-square " id="facebook"></i>
                     </a>
                 </li>
@@ -80,82 +141,31 @@
         </footer>
     </div>
 
-    <!--
 
-        about me tab
-
-    -->
-    <div class="content no-dis" id="about-me">
-        <!--First Colum-->
-        <div class="left-col col">
-            <div id="personalInfo">
-                <img src="Images/image0.png" alt="" id="profile-img">
-                <h1 class="name">Brian Chiu</h1>
-            </div>
-            <hr>
-            <div id="contactInfo">
-                <span class="heading"> Email</span>
-
-                <div id="email-links">
-                    <ul>
-                        <li><span class="bold"> Personal </span>- <span class="email">brianchiu33@gmail.com</span> </li>
-                        <li><span class="bold"> Work/School </span>- <span class="email">chiubri@sheridancollege.ca</span>
-                        </li>
-                    </ul>
-                </div>
-                <br>
-                <span class="heading"> Websites</span>
-                <div id="web-links">
-                    <ul>
-                        <li><span class="bold"> Linkedin </span> - <a href="www.linkedin.com/in/brian-ck-chiu/">linkedin.com/in/brian-ck-chiu/</a></li>
-                        <li><span class="bold"> Github </span> - <a href="www.github.com/BrianCKChiu">github.com/BrianCKChiu</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="right-col col">
-            <!--Second Colum-->
-            <div id="description">
-                <h4 class="heading text">BIO</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit risus lacus, nec commodo odio
-                iaculis
-                ut. Nulla facilisi. Phasellus at urna faucibus, tristique leo id, pharetra orci. Fusce nec posuere
-                urna. In
-                gravida ex sed eros tristique aliquet. Aenean dignissim sit amet lorem et semper. Sed leo ipsum,
-                congue.
-                <p></p>
-            </div>
+    <script>
+        var x = document.getElementById("home")
+        function pagechange(page) {
+            x.style.animation = 'loadoutFade 1s';
+                x.style.display = 'none';
 
 
+            var newPage = document.getElementById(page);
+            newPage.style.display = 'inline';
+            newPage.style.animation = 'loadFade 2s'
+            if (page == 'about'){
+                numberload()
+            }
 
-
-            <div id="education">
-
-
-                <!--Add counting numbers for gpa and expected to graduate-->
-            </div>
-            <div id="school-bar">
-                <div class="col-school" id="school">
-                    <h2 id="program-name">CST - System Analyst</h2><span id="college">@ Sheridan College </span>
-                </div>
-                <div class="col-school">
-                    <i class="fas fa-graduation-cap"></i>
-                    <div class="num">3.83</div>
-                    Current GPA
-                </div>
-                <div class="col-school">
-                    <i class="fas fa-calendar-alt"></i>
-                    <div class="num">2020</div>
-                    Graduate in
-                </div>
-                
-            </div>
-            <script type="text/javascript">
+            x = newPage;
+        }
+        function numberload(){
+            //plays after 1.5 Seconds
+            setTimeout(function() {
                 $('.num').counterUp({ delay: 10, time: 1000 })
-            </script>
-        </div>
-    </div>
-
+            }, 500);
+           
+        }
+    </script>
 </body>
 
 </html>

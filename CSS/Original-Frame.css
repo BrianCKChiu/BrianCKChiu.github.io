@@ -25,18 +25,19 @@ body {
 ::selection { /*Changing Selection color */
     background: rgba(0, 0, 0, 0.7); /* WebKit/Blink Browsers */
   }
-#home{
-    position: absolute; 
-    padding: 100px 100px 50px 100px;
-    width:300px;
-    margin-top:18vh;
+  .container{
+      margin-top:15vh;
     /*centering */
     right: 0;
     left: 0;
     margin-right: auto;
-    margin-left: auto; 
-
-    z-index: 1;
+    margin-left: auto;
+    z-index: 1; }
+#home{
+    position: absolute; 
+    padding: 100px 100px 50px 100px;
+    width:300px;
+    
     background: rgba(0, 0, 0, 0.3);
     color: white;
     text-align: center;
@@ -80,10 +81,6 @@ p {
     border-radius:170px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
 }
-.col {
-    width:400px;
-    max-height: 250px;
-}
 .content-box {
     color:black;
     background-color: white;
@@ -101,8 +98,14 @@ ul {
     margin:0;
     padding:0;
 }
-li { float: left; padding:6px;}
-a, button{
+
+.nav-links, .link-icon { float: left; padding:6px 0; }
+.nav-link{
+    width: 100%;
+    float: left;
+    width: auto;
+    text-align: justify;
+    width: 125px;;
     text-decoration: none;
     font-size: 20px;
     font-weight: 900;
@@ -122,7 +125,7 @@ button {
 
 }
 
-a:hover, button:hover{color: rgb(255, 255, 255);}
+a:hover, button:hover{color: rgb(255, 255, 255); cursor: pointer;}
 nav {
     position: absolute; 
     z-index: 1;
@@ -136,7 +139,7 @@ nav {
 
 /*Footer */
 footer{
-    position: fixed; 
+    position: absolute; 
     z-index: 1;
     width: 500px;
     margin: auto;
@@ -150,6 +153,7 @@ footer{
 }
 .link-icon{ 
     margin-right: 12px;
+    font-size: 20px;
 }
 .fab{
     font-size: 1.7em;
@@ -207,4 +211,19 @@ footer > ul{ margin-left:150px;width: 300px;}
     100%{opacity: 1;}
     }
 
+@keyframes loadoutFade {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+    }
 
+
+    @media only screen and (max-height: 850px) {
+        footer {
+            display: none;
+        }
+        .container{ margin-top:13vh;}
+    }
+
+
+
+    
