@@ -89,3 +89,20 @@ border-color: rgba(0, 0, 0, 0.411);
 .edu-ico{
     font-size: 2em;
 }
+@media only screen and (max-width: 980px) {
+    #about {
+        max-width: 500px;
+        margin-bottom: 70px;
+        padding-bottom: 30px;
+    }
+    /*TODO: fix footer*/
+  
+    .left-col {
+        margin:auto;
+        float:none;
+    }
+    .right-col {
+        float:none;
+        max-width: 100%;
+    }
+    }
