@@ -1,0 +1,113 @@
+body{font-family: 'Oswald', sans-serif;}
+.container{
+
+  text-align: center;
+}
+#skill {
+    background-color: white;
+    display: none;
+    width: 440px;
+    position: absolute; 
+    padding: 20px 30px;
+    box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.50);
+}
+h1{
+    font-size: 1.5em;
+}
+.skill-box{
+    width: 100%;
+    box-sizing: border-box;
+}
+.skill-box  p {
+    margin:0 0 0 0 ;
+    text-align: left;
+}
+p {
+letter-spacing: 1px;
+padding-top: 3px;}
+.skill-des{
+    letter-spacing: 1px; 
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.skill-box  p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -25px;
+
+}
+.skill-type {
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 1.7em !important;
+    color:#747d8c !important    ;
+    
+}
+.skill-bar{
+
+    margin: 0;
+    box-sizing: border-box;
+    border: solid 2px #2c3e50;
+    background-color: #7f8c8d;
+}
+.skill-level{
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ff4757;
+    height: 10px;
+    animation: bar-load 5s;
+}
+#hardware .skill-level {
+    background-color: #1e90ff;
+}
+#inter-skill .skill-level {
+    background-color: #2ed573;
+}
+.skill-bar, .skill-level{border-radius: 5px;}
+.skill-tab{
+    animation: loadFade 2s;
+}
+#btns-switch{
+    
+    margin-top:5px;
+}
+#btns-switch button:focus {
+    outline: none;
+  }
+#btns-switch button {
+    background-color: rgba(240, 248, 255, 0);
+border: none;
+font-size: 16px;
+
+}
+
+#btns-switch button:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.521);
+}
+#side-scroll{
+    width:100px;
+    margin:auto;
+    margin-top:10px;
+}
+.index-Ind{    
+    text-align: left;
+    color: rgba(0, 0, 0, 0.212);
+    font-size: 0.4em;
+}
+.fa-circle{
+    margin: 0 2px;
+}
+@keyframes bar-load{
+0%{width:0;}
+100%{width:100%;}
+}
+@keyframes loadFade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes loadoutFade {
+        0%{opacity: 1;}
+        100%{opacity: 0;}
+}
