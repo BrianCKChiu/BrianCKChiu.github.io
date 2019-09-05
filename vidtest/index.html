@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<div style="width:90%;">
+    <video id="vid" src="noob.mp4" onclick="playorpause()" style="width:90%;" >
+    </video>
+
+    <input type="range" min="0" max="100" value="0" style="width:90%;" onchange="setcurrenttime()" id="range">
+    <input type="range" min="0" max="100" value="0" style="width:90%;" onchange="setvolume()" id="vol">
+
+    <p id="debug"></p>
+</div>
+
+</body>
+
+<script src="vidjs.js"></script>
+
+</html>
